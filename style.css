@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #2b1d0f;
+    color: white;
+}
+header nav{
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+}
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+form input[type="text"],button[type="submit"]{
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+}
+
+button{
+    background-color: #f44336;
+    cursor: pointer;
+    color: white;
+     transition: background-color 0.3s ease-in-out;
+}
+
+
+button:hover{
+    background-color: #ff5c5c;
+}
+
+.recipe-container h2{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+/* Responsive Code */
+
+@media  screen and (max-width:600px) {
+header nav{
+    flex-direction: column;
+}
+header nav h1{
+    margin-bottom: 10px;
+    font-size: 100%;
+}
+
+    header nav form{
+        width: 80%;
+    }
+}
