@@ -18,7 +18,10 @@ A simple and responsive Recipe App built using HTML, CSS, and JavaScript. Users 
 - Recipe API   https://www.themealdb.com
 
 ## 📸 Screenshots
+
 ![Home-Page](assets/screenshorts/homePage.png);
+![Search-Products](assets/screenshorts/searchProduct.jpeg)
+![Search-products](assets/screenshorts/searchProduct2.jpeg)
 
 ## 🔧 Installation
 
