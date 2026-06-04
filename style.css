@@ -109,7 +109,50 @@ button:hover{
 
 .recipe-details{
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  background-color: #694c2f;
+  border-radius: 12px;
+  width: 40%;
+  height: 60%;
+  font-weight: 20px;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
 }
+
+
+/* Adding scrollbar to recipe details popup */
+.recipe-details::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+.recipe-details::-webkit-scrollbar-thumb{
+    background: #b5b5ba;
+    border-radius: 14px;
+    --webkit-border-radius:14px;
+}
+
+.recipe-details-content{
+    padding: 30px;
+}
+.recipeName{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.ingredientList li{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.recipeInstructions
 
 /* Responsive Code */
 

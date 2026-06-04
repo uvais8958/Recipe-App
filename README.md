@@ -1,4 +1,9 @@
-# 🍽️ Recipe App
+##  Start Date
+
+    [03/6/2026]  
+
+
+## 🍽️ Recipe App
 
 A simple and responsive Recipe App built using HTML, CSS, and JavaScript. Users can search for recipes and view recipe details using a public Recipe API.
 
@@ -22,6 +27,8 @@ A simple and responsive Recipe App built using HTML, CSS, and JavaScript. Users 
 ![Home-Page](assets/screenshorts/homePage.png);
 ![Search-Products](assets/screenshorts/searchProduct.jpeg)
 ![Search-products](assets/screenshorts/searchProduct2.jpeg)
+![Recipe-Details-Pop](assets/screenshorts/recipeDetails.jpeg)
+
 
 ## 🔧 Installation
 
@@ -37,12 +44,6 @@ git clone https://github.com/uvais8958/recipe-app.git
 ## 🚧 Project Status
 
 Work in Progress
-
-### Upcoming Features
-- Recipe Details Page
-- Favorites Feature
-- Category Filters
-- Better UI/UX
 
 ## 👨‍💻 Author
 
