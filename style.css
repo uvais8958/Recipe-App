@@ -73,7 +73,12 @@ button:hover{
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
     max-width: 350px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
 
+}
+.recipe:hover{
+transform: scale(1.04);
 }
 .recipe strong{
     font-size: normal;
@@ -132,7 +137,7 @@ button:hover{
 
 .recipe-details::-webkit-scrollbar-thumb{
     background: #b5b5ba;
-    border-radius: 14px;
+    border-radius: 10px;
     --webkit-border-radius:14px;
 }
 
@@ -143,20 +148,49 @@ button:hover{
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    text-decoration-line: underline;
 
+}
+.recipeName,.ingredientList,.recipeInstructions{
+    margin: 20px;
 }
 
 .ingredientList li{
     margin-bottom: 10px;
     margin-left: 10px;
     text-decoration: none;
-    list-style: none;
+    
 }
-.recipeInstructions
+.recipeInstructions p{
+    line-height: 30px;
+    white-space: pre-line;
 
+}
+
+.recipe-closeBtn{
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: fixed;
+}
+
+/* create a body scroll Bar */
+body::-webkit-scrollbar{
+    width: 16px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #a1a1a1;
+}
+body::-webkit-scrollbar-track{
+    background: #ebebeb;
+}
 /* Responsive Code */
 
-@media  screen and (max-width:600px) {
+
+@media screen and (max-width:600px) {
 header nav{
     flex-direction: column;
 }

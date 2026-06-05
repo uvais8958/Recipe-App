@@ -28,6 +28,8 @@ A simple and responsive Recipe App built using HTML, CSS, and JavaScript. Users 
 ![Search-Products](assets/screenshorts/searchProduct.jpeg)
 ![Search-products](assets/screenshorts/searchProduct2.jpeg)
 ![Recipe-Details-Pop](assets/screenshorts/recipeDetails.jpeg)
+![Recipe-Details-Pop](assets/screenshorts/detailPop.jpeg)
+![Error](assets/screenshorts/error%20(1).jpeg)
 
 
 ## 🔧 Installation
@@ -43,14 +45,19 @@ git clone https://github.com/uvais8958/recipe-app.git
 
 ## 🚧 Project Status
 
-Work in Progress
+Completed
 
 ## 👨‍💻 Author
 
-Uvais Ansari
+             Uvais Ansari
 
-GitHub: https://github.com/uvais8958
+         GitHub: https://github.com/uvais8958
 
 ## ⭐ Support
 
 If you like this project, give it a star on GitHub.
+
+
+##  project-End-Date
+                
+        [05/6/2026]

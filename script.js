@@ -7,6 +7,7 @@ const recipeCloseBtn=document.querySelector('.recipe-closeBtn');
 //function to get recipe
 const fetchRecipe=async(query)=>{
        recipeContainer.innerHTML=`<h2>Fetching Recipes...</h2>`;
+       try{
           const data= await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
           const response= await data.json();
           recipeContainer.innerHTML="";
@@ -32,6 +33,9 @@ const fetchRecipe=async(query)=>{
            })
 
           });
+         }catch(error){
+            recipeContainer.innerHTML=`<img src="https://img.magnific.com/premium-vector/alert-error-massage-notification-concept-error-digital-report-system-hacking-by-hacker_257312-129.jpg?semt=ais_hybrid&w=740&q=80"/>`
+         }
         
           //   console.log(response.meals[0]);
 
@@ -81,7 +85,12 @@ recipeCloseBtn.addEventListener('click',()=>{
 
 searchBtn.addEventListener("click",(e)=>{
     e.preventDefault();
-    // console.log("click button")
     const searchInput=searchBox.value.trim();
+    if(!searchInput){
+      recipeContainer.innerHTML=`<h2>
+      Type the meal in the search box!
+      </h2>`
+      return;
+    }
     fetchRecipe(searchInput);
 })
