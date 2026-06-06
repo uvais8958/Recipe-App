@@ -6,22 +6,29 @@
 }
 
 body{
-    background-color: #2b1d0f;
-    color: white;
+background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 header nav{
-    background-color: #212121;
+background: #020024;
+background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    color: #FCB045;
 }
 header nav h1{
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform:uppercase;
+    transition: 0.3s ease-in-out;
+}
+header nav h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 header nav form{
     display: flex;
@@ -40,15 +47,15 @@ form input[type="text"],button[type="submit"]{
 }
 
 button{
-    background-color: #f44336;
+    background-color: #3F5EFB;;
     cursor: pointer;
-    color: white;
+    color:#FCB045;
      transition: background-color 0.3s ease-in-out;
 }
 
 
 button:hover{
-    background-color: #ff5c5c;
+    background-color: #94BBE9;
 }
 
 .recipe-container{
@@ -78,7 +85,8 @@ button:hover{
 
 }
 .recipe:hover{
-transform: scale(1.04);
+transform: skewY(1.9deg);
+border: 1.8px solid #22C1C3;
 }
 .recipe strong{
     font-size: normal;
@@ -86,6 +94,9 @@ transform: scale(1.04);
     margin-block: 5px;
 }
 
+.recipe strong:hover{
+    transform: scale(1.1);
+}
 
 
 .recipe p{
@@ -126,6 +137,7 @@ transform: scale(1.04);
   font-weight: 20px;
   transition: all 0.5s ease-in-out;
   overflow-y: scroll;
+  color: white;
 }
 
 
