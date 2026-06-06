@@ -190,13 +190,37 @@ body::-webkit-scrollbar-track{
 /* Responsive Code */
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
 header nav{
     flex-direction: column;
+}.recipe-container{
+ width: 100%;
+ height: 100%;
 }
+.recipe-details{
+    font-size: 1rem;
+    width: 100%;
+    height: 50%;
+}
+.recipe-closeBtn{
+    margin-bottom: 20px;
+    position: fixed;
+}
+.recipeInstructions p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
 header nav h1{
     margin-bottom: 10px;
     font-size: 100%;
+}
+.recipeName{
+    width: 100%;
+}
+.recipe-container img{
+    background-image: cover;
+    background-position: fixed;
 }
 
     header nav form{
